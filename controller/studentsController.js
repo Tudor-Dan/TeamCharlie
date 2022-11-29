@@ -41,4 +41,18 @@ const submenu = () => {
     }
 }
 
+function totalStudents(){
+    const students = dataManager.readData("data.json");
+    let numStudents=0;
+    for(let i=0; i<students.length; i++){
+    numStudents++;
+    }
+    console.log(numStudents);
+    }
+    totalStudents();
+
+
 module.exports = {submenu};
+
+
+
